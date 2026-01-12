@@ -9,7 +9,7 @@ export default function BentoGrid() {
       {/* Experience Section */}
       <div id="experience" className="mb-24 scroll-mt-24">
         <div className="mb-12 border-l-8 border-gum-yellow pl-6">
-          <h2 className="text-5xl font-black uppercase tracking-tighter">
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
             Experience
           </h2>
         </div>
@@ -18,7 +18,7 @@ export default function BentoGrid() {
           {(DATA.work as readonly any[]).map((role, i) => (
             <div
               key={i}
-              className="flex flex-col md:flex-row gap-6 p-8 border-2 border-black rounded-[30px] bg-white shadow-[4px_4px_0px_0px_#000] hover:shadow-[6px_6px_0px_0px_#000] transition-shadow"
+              className="flex flex-col md:flex-row gap-6 p-6 md:p-8 border-2 border-black rounded-[30px] bg-white shadow-[4px_4px_0px_0px_#000] hover:shadow-[6px_6px_0px_0px_#000] transition-shadow"
             >
               <div className="flex-shrink-0">
                 {role.logoUrl ? (
@@ -61,8 +61,8 @@ export default function BentoGrid() {
         id="skills"
         className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24 scroll-mt-24"
       >
-        <div className="p-10 border-2 border-black rounded-[30px] bg-gum-yellow shadow-[4px_4px_0px_0px_#000] flex flex-col justify-center">
-          <h3 className="text-4xl font-black mb-6">Skills</h3>
+        <div className="p-6 md:p-10 border-2 border-black rounded-[30px] bg-gum-yellow shadow-[4px_4px_0px_0px_#000] flex flex-col justify-center">
+          <h3 className="text-3xl md:text-4xl font-black mb-6">Skills</h3>
           <div className="flex flex-wrap gap-3">
             {DATA.skills.map((skill) => (
               <span
@@ -74,8 +74,8 @@ export default function BentoGrid() {
             ))}
           </div>
         </div>
-        <div className="p-10 border-2 border-black rounded-[30px] bg-black text-white shadow-[4px_4px_0px_0px_#ccc] flex flex-col justify-center">
-          <h3 className="text-4xl font-black mb-6 text-gum-pink">
+        <div className="p-6 md:p-10 border-2 border-black rounded-[30px] bg-black text-white shadow-[4px_4px_0px_0px_#ccc] flex flex-col justify-center">
+          <h3 className="text-3xl md:text-4xl font-black mb-6 text-gum-pink">
             Let's Connect
           </h3>
           <p className="text-xl font-medium mb-8">
@@ -105,10 +105,10 @@ export default function BentoGrid() {
       {/* Projects Header - MOVED DOWN */}
       <div id="projects" className="scroll-mt-24">
         <div className="mb-16 border-l-8 border-gum-pink pl-6">
-          <h2 className="text-5xl font-black uppercase tracking-tighter">
+          <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
             Selected Work
           </h2>
-          <p className="text-xl mt-2 font-medium">
+          <p className="text-lg md:text-xl mt-2 font-medium">
             Things I've built that I'm proud of.
           </p>
         </div>
@@ -124,7 +124,7 @@ export default function BentoGrid() {
                 href={project.href}
                 target="_blank"
                 key={i}
-                className={`group relative flex flex-col justify-between p-8 min-h-[400px] border-2 border-black rounded-[30px] bg-white transition-all hover:-translate-y-2 hover:translate-x-1 hover:shadow-[8px_8px_0px_0px_#000]`}
+                className={`group relative flex flex-col justify-between p-6 md:p-8 min-h-[350px] md:min-h-[400px] border-2 border-black rounded-[30px] bg-white transition-all hover:-translate-y-2 hover:translate-x-1 hover:shadow-[8px_8px_0px_0px_#000]`}
               >
                 <div
                   className={`absolute inset-0 opacity-0 group-hover:opacity-10 ${color} rounded-[28px] transition-opacity`}

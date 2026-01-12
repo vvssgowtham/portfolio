@@ -80,12 +80,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500">
-        <p>
+      <div className="max-w-7xl mx-auto px-6 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 gap-4">
+        <p className="text-center md:text-left">
           © {new Date().getFullYear()} {DATA.name}. All rights reserved.
         </p>
-        <div className="flex gap-4 mt-4 md:mt-0">
-          <span className="font-mono text-xs border border-gray-700 px-2 py-1 rounded">
+        <div className="flex gap-4">
+          <span className="font-mono text-[10px] md:text-xs border border-gray-700 px-2 py-1 rounded">
             Last deployed: {new Date().toLocaleDateString()}
           </span>
         </div>
